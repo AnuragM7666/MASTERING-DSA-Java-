@@ -1,14 +1,23 @@
 import java.util.*;
+
 public class reverse {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
+        System.out.print("Enter a number:");
+        int num = sc.nextInt();
+        int originalNum = num;
+        int reversedNum = 0;
 
-        while (n > 0) {
-            int lastDigit = n % 10;
-            System.out.print(lastDigit);
-            n /= 10;
+        while (num > 0) {
+            int lastDigit = num % 10;
+            reversedNum = reversedNum * 10 + lastDigit;
+            num /= 10;
         }
-        System.out.println();
+        System.out.println(reversedNum);
+        if (reversedNum == originalNum) {
+            System.out.println("The number is a palindrome.");
+        } else {
+            System.out.println("The number is not a palindrome.");
+        }
     }
 }

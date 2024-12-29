@@ -5,7 +5,7 @@ public class prime {
         int n = sc.nextInt();
         
         if (n == 2) {
-            System.out.println("n is prime");
+            System.out.println("Your number is prime");
         } else {
             boolean isPrime = true;
             for (int i = 2; i <= Math.sqrt(n); i++) {
@@ -14,9 +14,9 @@ public class prime {
                 }
             }
             if (isPrime == true) {
-                System.out.println("n is prime");
+                System.out.println("Your number is prime");
             } else {
-                System.out.println("n is not prime");
+                System.out.println("Your number is not prime");
             }
         } 
         
