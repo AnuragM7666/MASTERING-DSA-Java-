@@ -2,6 +2,8 @@ import java.util.*;
 public class taxCalculator {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter your income: ");
         int income = sc.nextInt();
         int tax = 0;
 

@@ -2,6 +2,7 @@ import java.util.*;
 
 //Factorial
 public class Function3 {
+    
     public static void printFactorial(int n) {
 
         if (n < 0) {
