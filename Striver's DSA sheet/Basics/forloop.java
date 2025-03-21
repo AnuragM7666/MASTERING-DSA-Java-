@@ -15,9 +15,6 @@
 
 // Output: 8
 
-
-package Basics;
-
 import java.util.Scanner;
 
 public class forloop {
