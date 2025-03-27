@@ -1,6 +1,22 @@
 // import java.util.Arrays;
 public class Majority {
     public static int MajorityElement(int[] arr) {
+        //BRUTE-FORCE approach
+
+        // for (int val : arr) {
+        //     int freq = 0;
+        //     for (int ele : arr) {
+        //         if (val == ele) {
+        //             freq++;
+        //         }
+        //     }
+        //     if (freq > arr.length / 2) {
+        //         return val;
+        //     }
+        // }
+        // return -1;
+
+
         int n = arr.length;
 
         int freq = 0;
