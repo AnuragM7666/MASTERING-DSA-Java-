@@ -1,24 +1,24 @@
 import java.util.*;
 
 public class ratInMaze {
-    public void ratMaze(Vector<Vector<Integer>> mat, int row, int col, String path, Vector<String> ans,
-            Vector<Vector<Boolean>> visited) {
+    public void ratMaze(Vector<Vector<Integer>> mat, int row, int col, String path, Vector<String> ans
+            ) {
         int n=mat.size();
         int m = mat.get(0).size();
         
-        if(row<0 || col<0 || row>=n || col>=m || mat.get(row).get(col)==0 || visited.get(row).get(col)){
+        if(row<0 || col<0 || row>=n || col>=m || mat.get(row).get(col)==0 || mat.get(row).get(col)==-1) {
             return;
         }
         if (row == n - 1 && col == m - 1) {
             ans.add(path);
             return;
         }
-        visited.get(row).set(col, true);
-        ratMaze(mat, row, col + 1, path + "R", ans, visited);
-        ratMaze(mat, row + 1, col, path + "D", ans, visited);
-        ratMaze(mat, row, col - 1, path + "L", ans, visited);
-        ratMaze(mat, row - 1, col, path + "U", ans, visited);
-        visited.get(row).set(col, false);
+        mat.get(row).set(col, -1); //visited
+        ratMaze(mat, row, col + 1, path + "R", ans );
+        ratMaze(mat, row + 1, col, path + "D", ans);
+        ratMaze(mat, row, col - 1, path + "L", ans);
+        ratMaze(mat, row - 1, col, path + "U", ans);
+        mat.get(row).set(col, 1); // Backtrack to mark the cell as unvisited
     }
 
     public Vector<String> findPath(Vector<Vector<Integer>> mat) {
@@ -26,12 +26,8 @@ public class ratInMaze {
         String path = "";
         int n = mat.size();
         int m = mat.get(0).size();
-        Vector<Vector<Boolean>> visited = new Vector<>();
-        for (int i = 0; i < n; i++) {
-            visited.add(new Vector<>(Collections.nCopies(m, false)));
-        }
 
-        ratMaze(mat, 0, 0, path, ans, visited);
+        ratMaze(mat, 0, 0, path, ans);
         return ans;
     }
     public static void main(String[] args) {
