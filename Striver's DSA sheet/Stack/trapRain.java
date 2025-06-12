@@ -3,25 +3,43 @@
 public class trapRain {
     public int trap(int[] ht) {
         int n = ht.length;
-        int[] lb = new int[n];
-        int[] rb = new int[n];
-
-        lb[0] = ht[0];
-        rb[n - 1] = ht[n - 1];
-
-        for (int i = 1; i < n; i++) {
-            lb[i] = Math.max(lb[i - 1], ht[i]);
-        }
-
-        for (int i = n - 2; i >= 0; i--) {
-            rb[i] = Math.max(rb[i + 1], ht[i]);
-        }
-
+        //two pointer approach
         int ans = 0;
-        for (int i = 0; i < n; i++) {
-            ans += Math.min(lb[i], rb[i]) - ht[i];
+        int l = 0, r = n - 1;
+        int lmax = 0, rmax = 0;
+
+        while (l < r) {
+            lmax = Math.max(lmax, ht[l]);
+            rmax = Math.max(rmax, ht[r]);
+
+            if (lmax < rmax) {
+                ans += lmax - ht[l];
+                l++;
+            } else {
+                ans += rmax - ht[r];
+                r--;
+            }
         }
         return ans;
+        // int[] lb = new int[n];
+        // int[] rb = new int[n];
+
+        // lb[0] = ht[0];
+        // rb[n - 1] = ht[n - 1];
+
+        // for (int i = 1; i < n; i++) {
+        //     lb[i] = Math.max(lb[i - 1], ht[i]);
+        // }
+
+        // for (int i = n - 2; i >= 0; i--) {
+        //     rb[i] = Math.max(rb[i + 1], ht[i]);
+        // }
+
+        // int ans = 0;
+        // for (int i = 0; i < n; i++) {
+        //     ans += Math.min(lb[i], rb[i]) - ht[i];
+        // }
+        // return ans;
     }
     public static void main(String[] args) {
         trapRain trap = new trapRain();
