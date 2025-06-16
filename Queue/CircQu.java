@@ -2,7 +2,6 @@ public class CircQu {
     private int[] queue;
     private int front, rear, size, capacity;
 
-    // Correct constructor
     public CircQu(int k) {
         capacity = k;
         queue = new int[capacity];
@@ -65,7 +64,7 @@ public class CircQu {
     }
 
     public static void main(String[] args) {
-        CircQu cq = new CircQu(5); // Provide capacity here
+        CircQu cq = new CircQu(5); 
         cq.enQueue(10);
         cq.enQueue(20);
         cq.enQueue(30);
