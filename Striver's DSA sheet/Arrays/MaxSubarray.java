@@ -1,7 +1,7 @@
 public class MaxSubarray { //Brute-force approach : - Maxinum subarray sum
     public static int SubArr(int[] arr) {
         int maxSum = Integer.MIN_VALUE;
-        int n = arr.length - 1;
+        int n = arr.length;
 
         for (int start = 0; start < n; start++) {
             int CurrentSum = 0;
