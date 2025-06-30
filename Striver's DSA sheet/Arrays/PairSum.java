@@ -1,4 +1,4 @@
-//retujrn pair of elements whose sum is equal to target in a sorted array
+//return pair of elements whose sum is equal to target in a sorted array
 import java.util.Arrays;
 import java.util.Vector;
 public class PairSum {
