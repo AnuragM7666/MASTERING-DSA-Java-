@@ -1,7 +1,7 @@
 public class romanToInteger {
     private int value(char c) {
-        switch (c) {
-            case 'I':
+        switch (c) { //we can use hashmap, but switch is more efficient for a small set of characters
+            case 'I': 
                 return 1;
             case 'V':
                 return 5;
