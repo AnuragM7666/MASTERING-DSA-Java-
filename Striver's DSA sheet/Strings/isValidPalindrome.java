@@ -4,7 +4,7 @@
 //Given a string s, return true if it is a palindrome, or false otherwise.
 public class isValidPalindrome {
     public static boolean isAlphaNumeric(char c) {
-        if(Character.isLetter(c) || Character.isDigit(c)) {
+        if(Character.isLetterOrDigit(c)) {
             return true;
         }
         return false;
