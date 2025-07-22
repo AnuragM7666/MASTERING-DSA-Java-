@@ -12,7 +12,7 @@ public class fibonacci {
         return fib(n - 1) + fib(n - 2);
     }
     public static void main(String[] args) {
-        int n = 10; 
+        int n = 4; 
         System.out.println("Fibonacci of " + n + " is: " + fib(n));
     }
 }
