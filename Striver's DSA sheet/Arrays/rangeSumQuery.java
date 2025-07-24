@@ -21,8 +21,8 @@ public class rangeSumQuery {
         rsq.prefix = new int[arr.length];
         rsq.sum(arr);
 
-        System.out.println(rsq.sumRange(0, 2)); // Output: 6 (1 + 2 + 3)
-        System.out.println(rsq.sumRange(1, 3)); // Output: 9 (2 + 3 + 4)
-        System.out.println(rsq.sumRange(2, 4)); // Output: 12 (3 + 4 + 5)
+        System.out.println(rsq.sumRange(0, 2)); 
+        System.out.println(rsq.sumRange(1, 3)); 
+        System.out.println(rsq.sumRange(2, 4)); 
     }
 }

@@ -4,8 +4,6 @@
 //You must write an algorithm that runs in O(n) time and without using the division operation.
 public class ProductItself {
     public static int[] ArrProdExceIt(int[] nums) {
-        //Brute force approach
-
         int n = nums.length;
         int[] prod = new int[n];
         int suffix = 1;
