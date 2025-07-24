@@ -18,7 +18,7 @@ class incrementOne {
     }
 
     public static void main(String[] args) {
-        int[] digits = { 9, 9, 9 }; 
+        int[] digits = { 1, 0, 4 }; 
         int[] result = plusOne(digits);
         System.out.println(Arrays.toString(result)); 
     }
