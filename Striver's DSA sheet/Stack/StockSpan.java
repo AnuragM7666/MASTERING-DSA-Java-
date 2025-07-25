@@ -28,7 +28,5 @@ public class StockSpan {
         int[] price = {100, 80, 60, 70, 60, 75, 85};
         Vector<Integer> span = ss.calcSpan(price);
         System.out.println("Stock Span: " + span);
-
-        
     }
 }
