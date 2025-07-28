@@ -1,3 +1,4 @@
+package Greedy;
 public class minJumps {
     public int js(int[] arr) {
         int n = arr.length;

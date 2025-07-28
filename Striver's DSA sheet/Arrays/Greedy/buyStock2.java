@@ -1,3 +1,4 @@
+package Greedy;
 //Given an array arr[] denoting the cost of stock on each day, the task is to find 
 //the maximum total profit if we can buy and sell the stocks any number of times.
 //Note: We can only sell a stock which we have bought earlier and we cannot hold multiple stocks on any day.

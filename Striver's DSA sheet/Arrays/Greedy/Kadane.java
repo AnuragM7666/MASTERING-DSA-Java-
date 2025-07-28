@@ -1,3 +1,4 @@
+package Greedy;
 public class Kadane {
     public static int maxSubArray(int[] nums) {
         int currSum = 0;

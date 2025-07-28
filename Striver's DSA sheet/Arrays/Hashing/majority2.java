@@ -1,3 +1,4 @@
+package Hashing;
 // This code finds all elements in an array that appear more than n/3 times.
 import java.util.ArrayList;
 import java.util.Collections;

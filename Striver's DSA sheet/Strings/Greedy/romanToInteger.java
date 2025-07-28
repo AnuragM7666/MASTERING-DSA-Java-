@@ -1,3 +1,4 @@
+package Greedy;
 public class romanToInteger {
     private int value(char c) {
         switch (c) { //we can use hashmap, but switch is more efficient for a small set of characters

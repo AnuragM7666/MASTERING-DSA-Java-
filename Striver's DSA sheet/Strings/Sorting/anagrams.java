@@ -1,3 +1,4 @@
+package Sorting;
 import java.util.Arrays;
 //two strings are anagrams if they contain the same characters in the same frequency
 public class anagrams {
