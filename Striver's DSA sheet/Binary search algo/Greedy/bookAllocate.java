@@ -1,3 +1,4 @@
+package Greedy;
 // You are given an array arr[] of size n, where arr[i] represents the number of pages in the i-th book.
 // There are m students, and the books must be allocated to students such that:
 //Each student gets at least one book.

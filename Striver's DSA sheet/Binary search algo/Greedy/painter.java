@@ -1,3 +1,4 @@
+package Greedy;
 //The Painter’s Partition Problem is a classic problem in binary search and dynamic programming. 
 //It involves dividing a board into sections to minimize the maximum workload assigned to a painter.
 //You are given:

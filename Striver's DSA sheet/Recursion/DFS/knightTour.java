@@ -1,3 +1,4 @@
+package DFS;
 //There is a knight on an n x n chessboard. In a valid configuration, 
 //the knight starts at the top-left cell of the board and visits every cell on the board exactly once.
 //You are given an n x n integer matrix grid consisting of distinct integers from the range[0,n*n-1]

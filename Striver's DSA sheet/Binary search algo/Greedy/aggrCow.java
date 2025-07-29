@@ -1,3 +1,4 @@
+package Greedy;
 //The Aggressive Cows problem is a popular problem in competitive programming, often solved using binary search on the answer.
 //You are given n stalls and c cows. The stalls are located at N different positions on a 1D number line. 
 //Your task is to place the cows in these stalls such that the minimum distance between any two cows is maximized.

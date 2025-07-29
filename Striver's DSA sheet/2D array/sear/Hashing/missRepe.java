@@ -1,3 +1,4 @@
+package Hashing;
 //You are given a 0-indexed 2D integer matrix grid of size n * n with values in the range [1, n2].
  //Each integer appears exactly once except a which appears twice and b which is missing.
  // The task is to find the repeating and missing numbers a and b.

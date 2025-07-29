@@ -1,3 +1,4 @@
+package elimination;
 //A celebrity is a person who is known to all but does not know anyone at a party.
 // A party is being organized by some people. 
 //A square matrix mat[][] (n*n) is used to represent people at the party such that 
