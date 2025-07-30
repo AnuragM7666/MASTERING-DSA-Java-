@@ -80,6 +80,22 @@ public class ll{
             current.next = newNode;
         }
 
+        void delete(int pos) {
+            if (head == null)
+                return;
+            if (pos == 0) {
+                head = head.next;
+            }
+            else if (pos> 0) {
+                Node curr = head;
+                for (int i = 0; i < pos - 1; i++) {
+                    curr = curr.next;
+                }
+
+                curr.next = curr.next.next;
+            }
+        }
+
         void search(int val) {
             Node current = head;
             int idx = 0;
@@ -118,5 +134,7 @@ public class ll{
         myList.printLL();
 
         myList.search(25);
+        myList.delete(2);
+        myList.printLL();
     }
 }
