@@ -34,7 +34,7 @@ public class merge {
     public void mergeSort(Vector<Integer> arr, int st, int end) {
         int mid = st + (end - st) / 2;
 
-        if (st <= end) {
+        if (st < end) {
             mergeSort(arr, st, mid - 1);
             mergeSort(arr, mid + 1, end);
             merging(arr, st, mid, end);
