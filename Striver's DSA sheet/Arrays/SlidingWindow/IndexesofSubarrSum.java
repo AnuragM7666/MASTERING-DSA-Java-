@@ -1,7 +1,5 @@
 import java.util.ArrayList;
 //this code finds the starting and ending indexes of a subarray that sums to a given target value
-//same approach is used to solve the problem number 209 on 
-//leetcode that finds the minimum length of a contiguous subarray of which the sum is at least target
 public class IndexesofSubarrSum {
     public ArrayList<Integer> subarrSum(int[] arr, int target) {
         ArrayList<Integer> ans = new ArrayList<>();
