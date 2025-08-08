@@ -23,6 +23,16 @@ public class happyNumber {
         }
 
         return fast == 1;
+
+        // HashSet<Integer> seen = new HashSet<>();
+        // while (num != 1) {
+        //     if (seen.contains(num)) {
+        //         return false;
+        //     }
+        //     seen.add(num);
+        //     num = sumOfSquares(num);
+        // }
+        // return true;
     }
 
     public static void main(String[] args) {
