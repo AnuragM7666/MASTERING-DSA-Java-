@@ -1,3 +1,4 @@
+package Greedy;
 import java.util.Arrays;
 //wave array is an array where every even index element is greater than or equal to its adjacent odd index elements and every odd index element is less than or equal to its adjacent even index elements.
 public class waveArray {
