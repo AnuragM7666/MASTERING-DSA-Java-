@@ -35,7 +35,7 @@ public class merge {
         int mid = st + (end - st) / 2;
 
         if (st < end) {
-            mergeSort(arr, st, mid - 1);
+            mergeSort(arr, st, mid);
             mergeSort(arr, mid + 1, end);
             merging(arr, st, mid, end);
         }
