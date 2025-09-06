@@ -43,4 +43,62 @@ public class randomPointer {
         }
         return mymap.get(head);
     }
+    public static void main(String[] args) {
+
+        Node head = new Node(7);
+        Node node1 = new Node(13);
+        Node node2 = new Node(11);
+        Node node3 = new Node(10);
+        Node node4 = new Node(1);
+        
+        head.next = node1;
+        node1.next = node2;
+        node2.next = node3;
+        node3.next = node4;
+        node4.next = null;
+
+        head.random = null;
+        node1.random = head;
+        node2.random = node4;
+        node3.random = node2;
+        node4.random = head;
+        
+        randomPointer solution = new randomPointer();
+        
+        Node copiedHead = solution.copyLL(head);
+        
+        System.out.println("Original List:");
+        printList(head);
+        
+        System.out.println("\nCopied List:");
+        printList(copiedHead);
+        
+        System.out.println("\nVerification:");
+        System.out.println("Original head != Copied head: " + (head != copiedHead));
+        System.out.println("Original head.val == Copied head.val: " + (head.val == copiedHead.val));
+    }
+    
+    public static void printList(Node head) {
+        Node temp = head;
+        while (temp != null) {
+            System.out.print("[" + temp.val + ", ");
+            if (temp.random != null) {
+                Node finder = head;
+                int index = 0;
+                while (finder != temp.random) {
+                    finder = finder.next;
+                    index++;
+                }
+                System.out.print(index);
+            } else {
+                System.out.print("null");
+            }
+            System.out.print("]");
+            if (temp.next != null) {
+                System.out.print(" -> ");
+            }
+            temp = temp.next;
+        }
+        System.out.println();
+    }
 }

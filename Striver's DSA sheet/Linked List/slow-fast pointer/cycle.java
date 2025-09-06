@@ -26,6 +26,15 @@ public class cycle {
             if (slow == fast) {
                 hasCycle = true;
                 break;
+
+                //if we had to return the length of cycle
+                // int count=1;
+                // ListNode curr=slow;
+                // while(curr.next!=slow){
+                //     count++;
+                //     curr=curr.next;
+                // }
+                // return count;
             }
         }
 
@@ -44,6 +53,8 @@ public class cycle {
         prev.next = null; 
 
         return slow;
+
+
     }
 
     public static void main(String[] args) {
